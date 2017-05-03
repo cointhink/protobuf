@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+
 message SignupForm {
   string email = 1;
   string username = 2;
