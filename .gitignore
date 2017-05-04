@@ -1,4 +1,7 @@
 /src/
 /pkg/
 /bin/
+/protoc3
+/elm
+/go
 

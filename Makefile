@@ -1,10 +1,12 @@
+.PHONY: elm go
+
 all: elm go
 
 elm: protos/*.proto
-	protoc3/bin/protoc --elm_out=e protos/*.proto
+	protoc3/bin/protoc --elm_out=elm protos/*.proto
 
 go: protos/*.proto
-	protoc3/bin/protoc --go_out=g protos/*.proto
+	protoc3/bin/protoc --go_out=go protos/*.proto
 		#echo $^ | xargs -n1 protoc3/bin/protoc --go_out=g
 
 protoc: protoc3 gen-elm gen-go
