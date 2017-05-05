@@ -2,11 +2,11 @@
 
 all: elm go
 
-elm: protos/*.proto
-	protoc3/bin/protoc --elm_out=elm protos/*.proto
+elm: proto/*.proto
+	protoc3/bin/protoc --elm_out=elm $^
 
-go: protos/*.proto
-	protoc3/bin/protoc --go_out=go protos/*.proto
+go: proto/*.proto
+	protoc3/bin/protoc --go_out=go $^
 		#echo $^ | xargs -n1 protoc3/bin/protoc --go_out=g
 
 protoc: protoc3 gen-elm gen-go

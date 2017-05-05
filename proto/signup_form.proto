@@ -4,5 +4,5 @@ package proto;
 message SignupForm {
   string email = 1;
   string username = 2;
-  string password = 3;
+  string fullname = 3;
 }
