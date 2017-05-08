@@ -1,8 +1,9 @@
 syntax = "proto3";
 package proto;
 
+import "proto/account.proto";
+
 message SignupForm {
-  string email = 1;
-  string username = 2;
-  string fullname = 3;
+  Account account = 1;
+  string thing = 2;
 }
