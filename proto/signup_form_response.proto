@@ -3,4 +3,9 @@ package proto;
 
 message SignupFormResponse {
   bool ok = 1;
+  enum Reasons {
+    EMAIL_TAKEN = 0;
+    USERNAME_TAKEN = 1;
+  };
+  Reasons Reason = 2;
 }
