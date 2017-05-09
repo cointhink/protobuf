@@ -2,10 +2,13 @@ syntax = "proto3";
 package proto;
 
 message SignupFormResponse {
-  bool ok = 1;
+  bool Ok = 1;
+  string Token = 2;
+  Reasons Reason = 3;
+  string Message = 4;
+
   enum Reasons {
-    EMAIL_TAKEN = 0;
-    USERNAME_TAKEN = 1;
+    EMAIL_ALERT = 0;
+    USERNAME_ALERT = 1;
   };
-  Reasons Reason = 2;
 }
