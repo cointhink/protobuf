@@ -1,4 +1,4 @@
-.PHONY: elm go
+.PHONY: elm go copy
 
 all: elm go
 
@@ -8,6 +8,10 @@ elm: proto/*.proto
 go: proto/*.proto
 	protoc3/bin/protoc --go_out=go $^
 		#echo $^ | xargs -n1 protoc3/bin/protoc --go_out=g
+
+copy:
+	cp -r elm/Proto ../web-elm/src/
+	cp -r go/proto ../api-go/src/
 
 protoc: protoc3 gen-elm gen-go
 	wget --no-clobber https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip
