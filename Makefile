@@ -1,9 +1,12 @@
-.PHONY: elm go copy
+.PHONY: elm crystal go copy
 
-all: elm go
+all: elm crystal go
 
 elm: proto/*.proto
 	protoc3/bin/protoc --elm_out=elm $^
+
+crystal: proto/*.proto
+	protoc3/bin/protoc --crystal_out=crystal $^
 
 go: proto/*.proto
 	protoc3/bin/protoc --go_out=go $^
