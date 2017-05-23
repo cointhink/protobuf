@@ -1,8 +1,6 @@
 syntax = "proto3";
 package proto;
 
-import "proto/account.proto";
-
 message SessionCreate {
   string Token = 1;
 }

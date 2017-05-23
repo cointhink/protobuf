@@ -1,0 +1,9 @@
+syntax = "proto3";
+package proto;
+
+import "proto/schedule.proto";
+
+message ScheduleCreate {
+  string Token = 1;
+  Schedule Schedule = 2;
+}

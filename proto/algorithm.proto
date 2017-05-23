@@ -1,0 +1,9 @@
+syntax = "proto3";
+package proto;
+
+message Algorithm {
+  string id = 1;
+  string account_id = 2;
+  string status = 3;
+  string code = 4;
+}
