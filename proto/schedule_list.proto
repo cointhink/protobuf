@@ -1,0 +1,6 @@
+syntax = "proto3";
+package proto;
+
+message ScheduleList {
+  string filter_account_id = 1;
+}

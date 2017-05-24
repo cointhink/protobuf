@@ -14,7 +14,7 @@ go: proto/*.proto
 
 copy:
 	cp -r elm/Proto ../web-elm/src/
-	cp -r go/proto ../api-go/src/
+	cp -r go/proto ../api-go/src/cointhink
 
 protoc: protoc3 gen-elm gen-go
 	wget --no-clobber https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip
