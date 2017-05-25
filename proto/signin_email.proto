@@ -2,5 +2,5 @@ syntax = "proto3";
 package proto;
 
 message SigninEmail {
-  string email = 1;
+  string Email = 1;
 }

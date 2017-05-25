@@ -4,6 +4,6 @@ package proto;
 import "proto/account.proto";
 
 message SignupForm {
-  Account account = 1;
-  string thing = 2;
+  Account Account = 1;
+  string Thing = 2;
 }

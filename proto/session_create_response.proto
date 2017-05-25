@@ -5,5 +5,5 @@ import "proto/account.proto";
 
 message SessionCreateResponse {
   bool Ok = 1;
-  Account account = 2;
+  Account Account = 2;
 }

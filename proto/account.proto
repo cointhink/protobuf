@@ -2,7 +2,7 @@ syntax = "proto3";
 package proto;
 
 message Account {
-  string email = 1;
-  string username = 2;
-  string fullname = 3;
+  string Email = 1;
+  string Username = 2;
+  string Fullname = 3;
 }
