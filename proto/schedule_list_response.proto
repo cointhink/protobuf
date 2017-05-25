@@ -6,5 +6,5 @@ import "proto/schedule.proto";
 message ScheduleListResponse {
   bool Ok = 1;
   string Message = 2;
-  repeated Schedule schedules = 3;
+  repeated Schedule Schedules = 3;
 }

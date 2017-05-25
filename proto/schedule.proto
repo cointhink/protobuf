@@ -2,8 +2,8 @@ syntax = "proto3";
 package proto;
 
 message Schedule {
-  string id = 1;
-  string account_id = 2;
-  string algorithm_id = 3;
-  string status = 4;
+  string Id = 1;
+  string AccountId = 2;
+  string AlgorithmId = 3;
+  string Status = 4;
 }
