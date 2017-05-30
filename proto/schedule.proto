@@ -6,4 +6,5 @@ message Schedule {
   string AccountId = 2;
   string AlgorithmId = 3;
   string Status = 4;
+  string InitialState = 5;
 }
