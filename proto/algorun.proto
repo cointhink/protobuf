@@ -4,6 +4,6 @@ package proto;
 message Algorun {
   string Id = 1;
   string AlgorithmId = 2;
-  string AccountId = 2;
-  string Status = 3;
+  string AccountId = 3;
+  string Status = 4;
 }
