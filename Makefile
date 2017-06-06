@@ -22,8 +22,8 @@ protoc: protoc3 gen-elm gen-go
 	rm protoc-3.3.0-linux-x86_64.zip
 
 gen-elm:
-	go get -u github.com/tiziano88/elm-protobuf/protoc-gen-elm
-	go build -o bin/protoc-gen-elm github.com/tiziano88/elm-protobuf/protoc-gen-elm
+	go get -u github.com/donpdonp/elm-protobuf/protoc-gen-elm
+	go build -o bin/protoc-gen-elm github.com/donpdonp/elm-protobuf/protoc-gen-elm
 
 gen-go: bin/protoc-gen-go
 	go get -u github.com/golang/protobuf/protoc-gen-go
