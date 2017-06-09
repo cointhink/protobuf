@@ -1,4 +1,4 @@
-.PHONY: elm crystal go copy
+.PHONY: elm crystal go ocaml copy
 
 all: elm crystal go
 
@@ -11,6 +11,9 @@ crystal: proto/*.proto
 go: proto/*.proto
 	protoc3/bin/protoc --go_out=go $^
 		#echo $^ | xargs -n1 protoc3/bin/protoc --go_out=g
+
+ocaml: proto/*.proto
+	for name in $^; do ocaml-protoc -ml_out ocaml $$name; done
 
 copy:
 	cp -r elm/Proto ../web-elm/src/
@@ -28,3 +31,5 @@ gen-elm:
 gen-go: bin/protoc-gen-go
 	go get -u github.com/golang/protobuf/protoc-gen-go
 
+gen-ocaml:
+	opam install ocaml-protoc
