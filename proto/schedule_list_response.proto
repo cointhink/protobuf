@@ -1,10 +1,10 @@
 syntax = "proto3";
 package proto;
 
-import "proto/schedule.proto";
+import "proto/schedule_run.proto";
 
 message ScheduleListResponse {
   bool Ok = 1;
   string Message = 2;
-  repeated Schedule Schedules = 3;
+  repeated ScheduleRun Schedules = 3;
 }

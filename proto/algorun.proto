@@ -5,5 +5,13 @@ message Algorun {
   string Id = 1;
   string AlgorithmId = 2;
   string AccountId = 3;
-  string Status = 4;
+  string ScheduleId = 4;
+  string Status = 5;
+
+  enum States {
+    unknown = 0;
+    stopped = 1;
+    running = 2;
+    deleted = 3;
+  }
 }
