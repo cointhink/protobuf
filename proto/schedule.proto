@@ -10,7 +10,7 @@ message Schedule {
 
   enum States {
     unknown = 0;
-    stopped = 1;
-    running = 2;
+    disabled = 1;
+    enabled = 2;
   }
 }

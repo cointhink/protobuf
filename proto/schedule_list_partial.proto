@@ -1,0 +1,9 @@
+syntax = "proto3";
+package proto;
+
+import "proto/schedule_run.proto";
+
+message ScheduleListPartial {
+  string ListId = 1;
+  ScheduleRun ScheduleRun = 2;
+}
