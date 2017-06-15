@@ -12,5 +12,6 @@ message Schedule {
     unknown = 0;
     disabled = 1;
     enabled = 2;
+    deleted = 3;
   }
 }
