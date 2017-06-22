@@ -1,6 +1,6 @@
-.PHONY: elm crystal go ocaml copy
+.PHONY: elm crystal go ocaml copy python
 
-all: elm crystal go
+all: elm crystal go python
 
 elm: proto/*.proto
 	protoc3/bin/protoc --elm_out=elm $^
@@ -10,7 +10,9 @@ crystal: proto/*.proto
 
 go: proto/*.proto
 	protoc3/bin/protoc --go_out=go $^
-		#echo $^ | xargs -n1 protoc3/bin/protoc --go_out=g
+
+python: proto/*.proto
+	protoc3/bin/protoc --python_out=python $^
 
 ocaml: proto/*.proto
 	for name in $^; do ocaml-protoc -ml_out ocaml $$name; done
