@@ -10,8 +10,11 @@ message Algorun {
 
   enum States {
     unknown = 0;
-    stopped = 1;
-    running = 2;
-    deleted = 3;
+    building = 1;
+    starting = 2;
+    running = 3;
+    stopped = 4;
+    destroying = 5;
+    deleted = 6;
   }
 }
