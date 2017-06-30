@@ -1,0 +1,9 @@
+syntax = "proto3";
+package proto;
+
+message Algolog {
+  string Id = 1;
+  string AlgorunId = 2;
+  string Level = 3;
+  string Message = 4;
+}
