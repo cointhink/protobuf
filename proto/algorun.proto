@@ -7,6 +7,7 @@ message Algorun {
   string AccountId = 3;
   string ScheduleId = 4;
   string Status = 5;
+  string Code = 6;
 
   enum States {
     unknown = 0;
