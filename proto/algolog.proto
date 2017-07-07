@@ -3,8 +3,9 @@ package proto;
 
 message Algolog {
   string Id = 1;
-  string AlgorunId = 2;
-  string Event = 3;
-  string Level = 4;
-  string Message = 5;
+  string CreatedAt = 2;
+  string AlgorunId = 3;
+  string Event = 4;
+  string Level = 5;
+  string Message = 6;
 }
