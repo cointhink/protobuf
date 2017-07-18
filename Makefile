@@ -21,16 +21,16 @@ copy:
 	cp -r elm/Proto ../web-elm/src/
 	cp -r go/proto ../api-go/src/cointhink
 
-protoc: protoc3 gen-elm gen-go
+protoc: bin/protoc-gen-elm bin/protoc-gen-go
 	wget --no-clobber https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip
 	unzip -o protoc-3.3.0-linux-x86_64.zip -d protoc3
 	rm protoc-3.3.0-linux-x86_64.zip
 
-gen-elm:
+bin/protoc-gen-elm:
 	GOPATH=`pwd` go get -u github.com/tiziano88/elm-protobuf/protoc-gen-elm
 	GOPATH=`pwd` go build -o bin/protoc-gen-elm github.com/tiziano88/elm-protobuf/protoc-gen-elm
 
-gen-go: bin/protoc-gen-go
+bin/protoc-gen-go:
 	GOPATH=`pwd` go get -u github.com/golang/protobuf/protoc-gen-go
 
 gen-ocaml:
