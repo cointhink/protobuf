@@ -2,7 +2,7 @@
 
 PATH=/bin:/usr/bin:./bin
 
-all: elm go python
+all: protoc3/bin/protoc elm go python
 
 elm: proto/*.proto
 	mkdir -p elm
@@ -28,7 +28,7 @@ copy:
 	cp -r elm/Proto ../web-elm/src/
 	cp -r go/proto ../api-go/src/cointhink
 
-protoc: bin/protoc-gen-elm bin/protoc-gen-go
+protoc3/bin/protoc: bin/protoc-gen-elm bin/protoc-gen-go
 	wget --no-clobber https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip
 	unzip -o protoc-3.3.0-linux-x86_64.zip -d protoc3
 	rm protoc-3.3.0-linux-x86_64.zip
