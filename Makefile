@@ -1,6 +1,6 @@
 .PHONY: elm crystal go ocaml copy python
 
-PATH=./bin
+PATH=/bin:./bin
 
 all: elm go python
 
