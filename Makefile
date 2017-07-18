@@ -1,20 +1,27 @@
 .PHONY: elm crystal go ocaml copy python
 
-all: elm crystal go python
+PATH=./bin
+
+all: elm go python
 
 elm: proto/*.proto
+	mkdir -p elm
 	protoc3/bin/protoc --elm_out=elm $^
 
 crystal: proto/*.proto
+	mkdir -p crystal
 	protoc3/bin/protoc --crystal_out=crystal $^
 
 go: proto/*.proto
+	mkdir -p go
 	protoc3/bin/protoc --go_out=go $^
 
 python: proto/*.proto
+	mkdir -p python
 	protoc3/bin/protoc --python_out=python $^
 
 ocaml: proto/*.proto
+	mkdir -p ocaml
 	for name in $^; do ocaml-protoc -ml_out ocaml $$name; done
 
 copy:
