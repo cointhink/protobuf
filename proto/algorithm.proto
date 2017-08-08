@@ -6,4 +6,5 @@ message Algorithm {
   string AccountId = 2;
   string Status = 3;
   string Code = 4;
+  string Description = 5;
 }
