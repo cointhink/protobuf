@@ -2,7 +2,7 @@
 
 PATH=/bin:/usr/bin:./bin
 
-all: protoc3/bin/protoc elm go python
+all: elm go python
 
 elm: proto/*.proto
 	mkdir -p elm
