@@ -1,0 +1,8 @@
+syntax = "proto3";
+package proto;
+
+message TradeSignalResponse {
+  bool Ok = 1;
+  string Message = 2;
+  string OrderId = 3;
+}

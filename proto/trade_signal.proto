@@ -1,0 +1,14 @@
+syntax = "proto3";
+package proto;
+
+message TradeSignal {
+  string Market = 1;
+  string Amount = 2;
+  string Currency = 3;
+  OrderType order = 4;
+
+  enum OrderType {
+    buy = 0;
+    sell = 1;
+  }
+}
