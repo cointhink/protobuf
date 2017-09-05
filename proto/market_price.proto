@@ -1,0 +1,10 @@
+syntax = "proto3";
+package proto;
+
+message MarketPrice {
+  string Exchange = 1;
+  string Market = 2;
+  string Amount = 3;
+  string Currency = 4;
+  string ReceivedAt = 5;
+}
