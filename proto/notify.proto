@@ -1,0 +1,9 @@
+syntax = "proto3";
+package proto;
+
+message Notify {
+  string Recipient = 2;
+  string Summary = 3;
+  string Detail = 4;
+  string Action = 5;
+}
