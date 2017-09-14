@@ -1,0 +1,12 @@
+syntax = "proto3";
+package proto;
+
+message CreditJournal {
+  string Id = 1;
+  string AccountId = 2;
+  string ScheduleId = 3;
+  string Status = 4;
+  string StripeTx = 5;
+  int32 CreditAdjustment = 6;
+  float TotalUsd = 7;
+}
