@@ -7,6 +7,7 @@ message Schedule {
   string AlgorithmId = 3;
   States Status = 4;
   string InitialState = 5;
+  string EnabledUntil = 6;
 
   enum States {
     unknown = 0;

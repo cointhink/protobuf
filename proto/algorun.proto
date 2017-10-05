@@ -8,6 +8,7 @@ message Algorun {
   string ScheduleId = 4;
   string Status = 5;
   string Code = 6;
+  string Image = 7;
 
   enum States {
     unknown = 0;

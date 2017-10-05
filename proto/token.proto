@@ -1,0 +1,10 @@
+syntax = "proto3";
+package proto;
+
+message Token {
+  string Id = 1;
+  string CreatedAt = 2;
+  string Token = 3;
+  string AccountId = 4;
+  string AlgorunId = 5;
+}
