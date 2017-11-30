@@ -1,0 +1,6 @@
+syntax = "proto3";
+package proto;
+
+message AlgorithmDetail {
+  string algorithm_id = 1;
+}

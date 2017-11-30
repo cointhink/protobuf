@@ -4,4 +4,5 @@ package proto;
 message ScheduleCreateResponse {
   bool Ok = 1;
   string Message = 2;
+  int32 ScheduleCredits = 3;
 }

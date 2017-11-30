@@ -7,4 +7,5 @@ message Algorithm {
   string Status = 3;
   string Code = 4;
   string Description = 5;
+  string Schema = 6;
 }

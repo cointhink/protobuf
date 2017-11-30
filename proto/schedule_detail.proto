@@ -1,0 +1,6 @@
+syntax = "proto3";
+package proto;
+
+message ScheduleDetail {
+  string schedule_id = 1;
+}
