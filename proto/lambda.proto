@@ -1,0 +1,11 @@
+syntax = "proto3";
+package proto;
+
+import "google/protobuf/any.proto";
+
+message Lambda {
+  string Token = 1;
+  string Method = 2;
+  google.protobuf.Any Object = 3;
+  string StateIn = 4;
+}
