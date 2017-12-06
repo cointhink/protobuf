@@ -20,5 +20,6 @@ message Schedule {
   enum Executors {
     container = 0;
     lambda = 1;
+    lambda_master = 2;
   }
 }
