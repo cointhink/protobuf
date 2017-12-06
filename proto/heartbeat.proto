@@ -1,0 +1,6 @@
+syntax = "proto3";
+package proto;
+
+message Heartbeat {
+  string Challenge = 1;
+}
