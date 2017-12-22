@@ -8,4 +8,5 @@ message Account {
   string Fullname = 4;
   string TimeZone = 5;
   int32 ScheduleCredits = 6;
+  string Stripe = 7;
 }
